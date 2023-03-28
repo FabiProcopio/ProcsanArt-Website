@@ -1,0 +1,16 @@
+footer {
+    padding-top: 20px;
+    height: 40px;
+    background-color: black;
+    z-index: 1;
+    bottom: 0;
+    position:relative;
+    border-top: solid 1px rgba(8, 255, 222, 0.3);;
+}
+
+.text {
+    font-weight: 100;
+    color: aquamarine;
+    text-align: center;
+}
+

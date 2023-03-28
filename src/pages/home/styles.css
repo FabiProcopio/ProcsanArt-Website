@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+body {
+    height: 150vh;
+    
+}
+
+.banner {
+    width: 100%;
+    height: 470px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+}
+.banner img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;
+}
+
+.frontbox-content {
+    width: 100%;
+    background-color: rgb(102, 95, 95, 0.17);
+    box-shadow: 0 -13px 20px -10px rgb(0 0 0 / 75%), 0 13px 20px -10px rgb(0 0 0 / 75%);
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    mix-blend-mode: normal;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 500px;
+    overflow: hidden;
+}
+
+.frontbox-content2 {
+    margin-top: 10%;
+    width: 100%;
+    background-color: rgb(102, 95, 95, 0.17);
+    box-shadow: 0 -13px 20px -10px rgb(0 0 0 / 75%), 0 13px 20px -10px rgb(0 0 0 / 75%);
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    mix-blend-mode: normal;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 200px;
+    overflow: hidden;
+}
+
+.contact-box {
+    margin-top: 32px;
+    height: 30px;
+    width: 30px;
+    background-color: red;
+}
+
+.box {
+    margin: 20px;
+    width: 50%;
+    height: auto;
+    overflow: hidden;
+}
+.video-container {
+    width: 100%;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+    margin-top: 0;
+    margin-top: -3px;
+    margin-left: -3px;   
+}
+
+
+.video-container iframe,
+.video-container object,
+.video-container embed { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.textfield {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    color: white;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: rgba(8, 255, 222, 0.3);
+    width: 30%;
+    min-height: 20%;
+    overflow: hidden;
+    text-align: left;
+}
+.socialmedia {
+    margin-bottom: -10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+}
+
+.twitter {
+    transition: transform .7s ease-in-out;
+}
+.twitter:hover {
+    transform: rotate(360deg) scale(1.20);
+    transition: 1s;
+}
+
+.instagram {
+    transition: transform .7s ease-in-out;
+}
+.instagram:hover {
+    transform: rotate(360deg) scale(1.20);
+    transition: 1s;
+}
+
+
+.style {
+    height: 30px;
+    width: auto;
+}
+
+
+@media (max-width: 768px) {
+    .banner {
+        width: 100%;
+        height: 140px;
+    }
+    
+     
+    .frontbox-content {
+        width: 100%;
+        
+        display: block;
+        align-items: center;
+        min-height: auto;
+    }
+    
+    .frontbox-content .textfield {
+        padding: 10px;
+        margin: 20px;
+        border-radius: 10px;
+        background-color: rgba(8, 255, 222, 0.3);
+        width: 85%;
+        min-height: 20%;
+        overflow: hidden;
+        text-align: left;
+    }
+
+    .box {
+        width: auto;
+    }
+  }

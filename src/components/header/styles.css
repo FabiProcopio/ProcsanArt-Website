@@ -1,0 +1,153 @@
+
+
+header {
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  background-color: rgb(0, 0, 0);
+  box-shadow: none;
+  border-bottom: 2px solid rgba(2, 2, 2, 0.17);
+  box-shadow: 0 5px 7px -2px rgb(0 0 0 / 95%);
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  mix-blend-mode: normal;
+  transition: all 0.1s;
+  z-index: 1;
+}
+header.active {
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  z-index: 100;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  background-color: rgba(2, 2, 2, 0.17);
+  box-shadow: 0 13px 17px -8px rgb(0 0 0 / 75%);
+  border-bottom: none;
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  mix-blend-mode: normal;
+  transition: all 0.3s;
+  z-index: 1;
+}
+  
+  
+  
+  
+  
+  
+nav {
+  width: 60%;
+  background-color: rgba(0, 0, 0, 0);
+  font-family: "Lato", sans-serif;
+  
+}
+ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+
+  /* transition: .5s; */
+
+  
+/* li:hover {
+  color: #00ffbf;
+  transform: scale(1.02);
+} */
+  
+a {
+   text-decoration: none;
+} 
+
+
+#logo {
+  background-color: rgba(0, 0, 0, 0);
+  width: auto;
+  height: 70px;
+  margin-top: 4px;
+  z-index: 999;
+}
+.logo {
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: bottom;
+}
+.bounce:hover {
+  animation-name: bounce;
+  animation-timing-function: ease;
+}
+@keyframes bounce {
+0%   { transform: translateY(0); }
+50%  { transform: translateY(10px); }
+100% { transform: translateY(0); }
+}
+
+#Navbar {
+    display: none;
+}
+
+.emptyboxplaceholder {
+  display: none;
+}
+
+
+@media (max-width: 900px) {
+  Nav {
+    width: 70%;
+    margin-right: 30px;
+  }
+}
+@media (max-width: 768px) {
+  Nav {
+    margin-right: 0;
+  }
+  .navigation-main {
+    display: none;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+  }
+  header.active {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+  }
+
+  
+  #logo {
+    background-color: rgba(0, 0, 0, 0);
+    width: auto;
+    height: 70px;
+    margin-top: 0px;
+    
+  }
+
+  #Navbar {
+    display: inline;
+}
+
+  .header {
+    flex-direction: row-reverse;
+
+  }
+
+  #logo {
+    margin-left: 30px;
+  }
+
+}
